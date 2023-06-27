@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websitek</title>
+    <LINK rel="Stylesheet"href="style.css"> </LINK>
+    
+       
+    <h1>WEBSITE</h1>
+</head>
+<body>
+    
+    <div class="side-panel">
+
+        
+        <button id="homeButton">Home</button> 
+        <button id="contactButton">Contact</button>
+        <button id="infoButton">Information</button>
+        <button id="guideButton">Guide</button>
+      </div>
+      <div class="main-panel">
+        <div class="centered-div">
+            <p id="content">Welcome to the website </p>      
+      </div>
+      </div>
+      <div class="bottom-panel">
+<p>Developer information , terms and conditions and other services provided goes here</p>
+      </div>
+      <script>
+        const homeButton = document.getElementById("homeButton");
+        const contactButton = document.getElementById("contactButton");
+        const infoButton = document.getElementById("infoButton");
+        const guideButton = document.getElementById("guideButton");
+        const content = document.getElementById("content");
+      
+        homeButton.addEventListener("click", function() {
+          
+          content.textContent = "This is where the contents of the home tab goes. This tab is supposed to content the primary contents of the website.";
+        });
+      
+        contactButton.addEventListener("click", function() {
+          
+          content.textContent = "This tab will contain the contact information like email, phone number or any other contact information.";
+        });
+      
+        infoButton.addEventListener("click", function() {
+         
+          content.textContent = "This tab is supposed to contain information that the company wants to display to the user.";
+        });
+      
+        guideButton.addEventListener("click", function() {
+        
+          content.textContent = "The guide content will go here.";
+        });
+      </script>
+      
+      
+
+      
+
+
+
+
+
+
+
+   
+    
+
+</body>
+</html>
